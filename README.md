@@ -1,14 +1,18 @@
 # Heartz-ERC20
-A Simple contract Of Token With ERC20 Standards Which Can Perform Simple Tasks like :**GetBalance**,**MintToken**,**TransferToken** And **BurnToken**
+A Simple contract Of Token With ERC20 Standards Which Can Perform Simple Tasks like :
+**GetBalance** 
+**MintToken**
+**TransferToken**
+**BurnToken**
 ## Description
 The token Name Is Heartz And Has Standard Of ERC20 Which Can Be deployed In Etherium Mainnet Or TestNetwork Using Web3 Wallet Like [**Metamask**](https://metamask.io/)
 The Token Is Written In Solidity And ERC20 Templates And More Details Can Be obtained From OpenZeppelin libraries [here](https://openzeppelin.com/contracts/)
 And You Can Build Your on Token Contract From Scratch By Importing ERC20 Standards From This [page](@openzeppelin/contracts@5.0.1/token/ERC20/ERC20.sol)
 This Project Just Shows A Simple Version Of token Contract In Solidity With ERC20 Standards It Doesn't Means Final Output It Needs To Be Further Developer For Interacting With Deapps And Deploy In Main Net 
 **TokenDetails**
-- **Token Name:**Heartz
-- **Token Symbol:**Hz
-- **Decimals:**18
+- **Token Name**Heartz
+- **Token Symbol**Hz
+- **Decimals**18
 - You Can Change This To Your Desire Note:(Decimel Should be:8,16)
 ## Getting Started
 *For Getting Started Interacting With the contract You Need An Enviornment to Run Solidity Contract You Can Use Online Enviornment like [Gitpod](https://www.gitpod.io/) Or [Remix](https://remix.ethereum.org/) Or You Can Simply Run In Offline Enviornments Like VSCode With Help Of redhat 
