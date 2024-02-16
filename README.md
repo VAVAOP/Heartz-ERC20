@@ -1,9 +1,9 @@
 # Heartz-ERC20
 A Simple contract Of Token With ERC20 Standards Which Can Perform Simple Tasks like :
-**GetBalance** 
-**MintToken**
-**TransferToken**
-**BurnToken**
+**Get Balance**  ,
+**Mint Token** ,
+**Transfer Token** ,
+ And **Burn Token**
 ## Description
 The token Name Is Heartz And Has Standard Of ERC20 Which Can Be deployed In Etherium Mainnet Or TestNetwork Using Web3 Wallet Like [**Metamask**](https://metamask.io/)
 The Token Is Written In Solidity And ERC20 Templates And More Details Can Be obtained From OpenZeppelin libraries [here](https://openzeppelin.com/contracts/)
