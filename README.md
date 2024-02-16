@@ -36,11 +36,10 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts@5.0.1/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts@5.0.1/token/ERC20/extensions/ERC20Permit.sol";
 import "@openzeppelin/contracts@5.0.1/access/Ownable.sol";
 
-contract MyToken is ERC20, ERC20Permit, Ownable {
-    constructor() ERC20("Heartz", "Hz") ERC20Permit("MyToken") Ownable(msg.sender) {}
+contract MyToken is ERC20, Ownable {
+    constructor() ERC20("Heartz", "Hz")Ownable(msg.sender) {}
     
     function mintHeartz(uint256 amount) public onlyOwner {
         _mint(msg.sender, amount);
@@ -54,17 +53,19 @@ contract MyToken is ERC20, ERC20Permit, Ownable {
     }
 
     function transferHeartz(address _receiver, uint256 _value) external {
-        require(balanceOf(msg.sender) >= _value, "You do not have enough Degen Tokens");
+        require(balanceOf(msg.sender) >= _value, "You do not have enough Hertz Tokens");
         approve(msg.sender, _value);
         transferFrom(msg.sender, _receiver, _value);
     }
 
     function burnHeartz(uint256 _value) external {
-        require(balanceOf(msg.sender) >= _value, "You do not have enough Degen Tokens");
+        require(balanceOf(msg.sender) >= _value, "You do not have enough Hertz Tokens");
         _burn(msg.sender, _value);
     }
 
 }
+
+      
 
 
 ```
